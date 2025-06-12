@@ -1,0 +1,13 @@
+.Main h1 {
+    text-align: center;
+    color: aqua;
+}
+
+.Main h3 {
+    text-align: center;
+    background-color: aqua;
+}
+
+.Background {
+    background-color: aquamarine;
+}
