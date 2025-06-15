@@ -1,13 +1,84 @@
+html,body {height: 100%;}
+
+body {
+    background-image: url("../Pictures/AOT.jpg");
+    background-size: cover;
+    margin: 0px;
+}
+
+.Menu {margin: 0 auto;}
+
+.Menu ul {
+    list-style-type: none;
+    background-color: hsl(0, 0%, 25%);
+    margin: 0;
+    padding: 0;
+    text-align:center;
+}
+
+.Menu a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    gap: 100px;
+    text-align: center;  
+    font-size: 1.3rem;
+}
+
+.Menu li {display: inline; }
+
+.Menu a:hover {background-color: #333;}
+
+header {}
+
 .Main h1 {
     text-align: center;
-    color: aqua;
+    color: white;
 }
 
-.Main h3 {
-    text-align: center;
-    background-color: aqua;
+.Main h3 {text-align: center;}
+
+.Background {}
+
+.Upload_Image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.Background {
-    background-color: aquamarine;
+.CLick_Button_To_Upload {cursor: pointer;   }
+
+.Add_Info {text-align: center;}
+
+.Blog {
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 5%;
 }
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    gap: 20px;
+}
+
+.Picture {
+    background-image: url("../Pictures/Cactus.jpeg");
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.Text_Under_Picture {
+    color: white;
+    margin-top: 170px;
+}
+
+footer {}
+
