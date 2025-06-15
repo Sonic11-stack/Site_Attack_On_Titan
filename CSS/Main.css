@@ -1,7 +1,10 @@
+
+
 html,body {height: 100%;}
 
 body {
-    background-image: url("../Pictures/AOT.jpg");
+    background-image: url("../Pictures/AOT_1.jpg");
+    background-attachment: fixed;
     background-size: cover;
     margin: 0px;
 }
@@ -26,18 +29,49 @@ body {
     font-size: 1.3rem;
 }
 
-.Menu li {display: inline; }
+.Menu li {
+    display: inline;
+    position: relative;
+    top: 5px;
+}
 
 .Menu a:hover {background-color: #333;}
 
-header {}
+header {
+    height: 70px;
+    background-color: hsl(0, 0%, 25%);
+}
+
+.Logo {
+    width: 60px;
+    height: 60px;
+}
+
+.Logo-container {
+    position: absolute;
+    margin-top: -50px;
+}
+
+.Logo-text {
+    color: white;
+    position: relative;
+    top: -25px;
+    font-size: 1.5rem;
+}
+
+main {
+    margin-bottom: 300px;
+}
 
 .Main h1 {
     text-align: center;
     color: white;
 }
 
-.Main h3 {text-align: center;}
+.Main h3 {
+    text-align: center;
+    color: white;
+}
 
 .Background {}
 
@@ -47,38 +81,177 @@ header {}
     justify-content: center;
 }
 
-.CLick_Button_To_Upload {cursor: pointer;   }
+.CLick_Button_To_Upload {
+    cursor: pointer; 
+    margin-top: 30px;
+    background-color: rgb(0, 94, 255);
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
 
-.Add_Info {text-align: center;}
+.Add_Info {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+.Other_Blogs h1 {
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
 
 .Blog {
     width: 50%;
     height: 50%;
     margin: 0 auto;
     display: block;
-    margin-top: 5%;
+    margin-top: 10%;
 }
 
 .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
 }
 
-.Picture {
-    background-image: url("../Pictures/Cactus.jpeg");
-    width: 200px;
+.Picture_1, .Picture_2, .Picture_3, .Picture_4 {
+    width: 300px;
     height: 200px;
     display: inline-block;
-    background-size: cover;
+    background-size: 250px 200px;
     cursor: pointer;
 }
 
-.Text_Under_Picture {
-    color: white;
-    margin-top: 170px;
+.Picture_1 {
+    
 }
 
-footer {}
+.Picture_2 {
+    
+}
 
+.Picture_3 {
+    
+}
+
+.Picture_4 {
+    
+}
+
+.Gif_Sasha {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 1350px;
+    top: 70px;
+}
+
+.Gif_Mikasa {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 30px;
+    top: 70px;
+}
+
+footer {background-color: hsl(0, 0%, 25%);}
+
+
+.card {
+  max-width: 300px;
+  margin: 50px auto;
+}
+
+.card-with-hover {
+  position: relative;
+  overflow: hidden;
+  background: #3085a3;
+  text-align: center;
+  height: 300px;
+}
+
+.card-with-hover > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s;
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
+}
+
+.card-with-hover:hover > img {
+  transform: scale(1.15) translate3d(0, -20px, 0);
+}
+
+.card-with-hover > .card-caption {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(23, 28, 47, 0.6);
+
+  transition: all 0.3s;
+  transform: translate3d(0, 100%, 0);
+  will-change: transform;
+}
+
+.card-with-hover > .card-caption > .card-caption-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: auto;
+  transition: all 0.3s;
+
+  transform: translate3d(0);
+  will-change: transform;
+}
+
+.card-with-hover > .card-caption h2 {
+  display: block;
+  color: #fff;
+  margin: 0;
+  padding: 1.5rem;
+  transition: all 0.3s;
+  background-color: rgba(23, 28, 47, 0.4);
+
+  transform: translate3d(0, -100%, 0);
+  will-change: transform;
+}
+
+.card-with-hover > .card-caption p {
+  padding: 0 1rem;
+  margin: 0;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.35s 0.1s;
+  transform: translate3d(0);
+  will-change: transform;
+}
+
+.card-with-hover:hover > .card-caption {
+  transform: translateY(0);
+}
+
+.card-with-hover:hover > .card-caption > .card-caption-content {
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.card-with-hover:hover > .card-caption h2 {
+  background-color: rgba(255, 255, 255, 0);
+  transform: translateY(0%);
+}
+
+.card-with-hover:hover > .card-caption p {
+  opacity: 1;
+}
+
+/***** Efecto *****/
